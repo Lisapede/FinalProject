@@ -1,0 +1,2 @@
+id,producer,wine_name,vintage_hint,region,state,country,wine_type,body,brand,varietal,taste_profile,typical_vintage,price,sources,created_at
+1,La Delizia,Pinot Grigio,,Veneto,Veneto,Italy,White,Light,La Delizia,Pinot Grigio,"Crisp, Fruity",2021,$10-$15,"[""Wine Enthusiast"",""Vivino"",""Wine.com""]",2025-04-06 02:06:00
