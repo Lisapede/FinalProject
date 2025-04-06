@@ -1,132 +1,184 @@
-# -----------------------------------------------
-#  2. Wine list:
-# ------------------------------------------------
-#  Objective: Pull the wine menu off of the restaurant's website
-#  Notes: need to fix this since it is not finding all of the restaurant wine menus
-# -----------------------------------------------
+# wine_menu_scraper.py
+"""
+Wine Menu Finder
+================
+Reads every ``*_RestaurantList.csv`` that the *restaurant_scraper.py* tool
+produces (they live in **data/Restaurant_Lists_by_City/**), visits each
+restaurant’s website, hunts for a page or PDF that contains the wine list,
+and writes the results to **data/restaurant_wine_offerings.csv**.
 
-import urllib.request
-import ssl
-import os
+Heuristics used
+---------------
+1. **Direct wine links** – anchor tags whose text **or** href contains any of
+   ``wine``, ``vino``, or ``vin``.
+2. **Menu‑ish links** – if no direct wine link exists, follow links whose text
+   or href looks like a menu (``menu``, ``dinner``, ``drinks``, ``beverage``,
+   ``happy hour``).  Up to 10 such pages are fetched and scanned for wine
+   keywords.
+3. **PDF fallback** – PDF links whose filename hints at wine or drinks.
+
+If nothing is found the script records **“No wines found”**.
+
+Run
+---
+$ python wine_menu_scraper.py
+"""
+
 import csv
-from bs4 import BeautifulSoup
-from urllib.parse import urljoin
+import glob
+import os
+import re
+import ssl
+import sys
+from typing import List, Tuple
+from urllib.parse import urljoin, urlparse
+import urllib.request
 
-# Setup SSL context
+from bs4 import BeautifulSoup
+
+# ---------------------------------------------------------------------------
+# Network helpers
+# ---------------------------------------------------------------------------
+
 context = ssl._create_unverified_context()
 
-def pull(url):
-    """Fetch and decode HTML content from a URL."""
-    response = urllib.request.urlopen(url, context=context).read()
-    return response.decode('utf-8')
+HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/122.0 Safari/537.36"
+    )
+}
 
-def find_menu_link(homepage_soup, base_url):
-    """
-    Search for an anchor tag that likely points to a drinks or wine menu.
-    Looks for keywords 'menu' plus 'wine', 'drink', or 'beverage' in the link text or href.
-    Returns the absolute URL if found.
-    """
-    candidates = []
-    for a in homepage_soup.find_all('a', href=True):
-        text = a.get_text(strip=True).lower()
-        href = a['href'].lower()
-        if "menu" in text and ("wine" in text or "drink" in text or "beverage" in text):
-            candidates.append(a)
-        elif "menu" in href and ("wine" in href or "drink" in href or "beverage" in href):
-            candidates.append(a)
-    if candidates:
-        # Return the absolute URL of the first candidate
-        return urljoin(base_url, candidates[0]['href'])
-    return None
 
-def extract_wine_details(menu_html):
-    """
-    Extract text lines mentioning 'wine' from the menu page.
-    Returns a semicolon-separated string of unique lines.
-    """
-    soup = BeautifulSoup(menu_html, 'lxml')
-    text = soup.get_text(separator='\n')
-    wine_lines = []
-    for line in text.splitlines():
-        if "wine" in line.lower():
-            wine_lines.append(line.strip())
-    wine_lines = list(filter(None, set(wine_lines)))  # remove duplicates and empties
-    return "; ".join(wine_lines) if wine_lines else "No wine details found"
+def pull(url: str) -> str:
+    """Download *url* and return decoded text (best‑effort for PDFs)."""
+    req = urllib.request.Request(url, headers=HEADERS)
+    with urllib.request.urlopen(req, context=context, timeout=30) as resp:
+        data = resp.read()
+        ctype = resp.headers.get("Content-Type", "").lower()
+    # naïve PDF handling — we only need to keyword‑scan
+    if "pdf" in ctype or url.lower().endswith(".pdf"):
+        return data.decode("latin1", errors="ignore")
+    return data.decode("utf-8", errors="ignore")
 
-# Read the RestaurantList.csv file (created by your earlier code)
-restaurants_csv = os.path.join('data', 'RestaurantList.csv')
-restaurants = []
-with open(restaurants_csv, newline='', encoding='utf-8') as csvfile:
-    reader = csv.DictReader(csvfile)
-    for row in reader:
-        restaurants.append(row)
+# ---------------------------------------------------------------------------
+# Load restaurant list(s)
+# ---------------------------------------------------------------------------
 
-output = []
+def list_restaurant_csvs() -> List[str]:
+    """Return paths to all *_RestaurantList.csv files under the city folder."""
+    return glob.glob(os.path.join("data", "Restaurant_Lists_by_City", "*_RestaurantList.csv"))
 
-# Process each restaurant website to find a wine/drinks menu
-for restaurant in restaurants:
-    name = restaurant.get("name", "Unknown")
-    website = restaurant.get("website", "")
-    if not website or website == "No website found":
-        output.append({
-            "name": name,
-            "website": website,
-            "menu_url": "N/A",
-            "wine_details": "No website"
-        })
-        continue
 
-    print(f"Processing {name} - {website}")
+def load_restaurants() -> List[dict]:
+    rows: List[dict] = []
+    for path in list_restaurant_csvs():
+        with open(path, newline="", encoding="utf-8") as fh:
+            rows.extend(list(csv.DictReader(fh)))
+    return rows
+
+# ---------------------------------------------------------------------------
+# Wine‑menu discovery
+# ---------------------------------------------------------------------------
+
+WINE_RE = re.compile(r"(wine|vino|vin\s(?:rouge|blanc)?|by the glass|by the bottle)", re.I)
+MENU_RE = re.compile(r"(menu|dinner|lunch|drink|drinks|beverage|happy)", re.I)
+
+
+def candidate_links(soup: BeautifulSoup, base_url: str) -> List[Tuple[str, bool]]:
+    """Return [(abs_url, has_wine_kw)] sorted with wine‑specific links first."""
+    links: List[Tuple[str, bool]] = []
+    for a in soup.find_all("a", href=True):
+        text = a.get_text(" ", strip=True)
+        href = a["href"]
+        if not href or href.startswith("#"):
+            continue
+        abs_url = urljoin(base_url, href)
+        combined = f"{text} {href}".lower()
+        has_wine = bool(re.search(r"wine|vino|vin", combined))
+        if has_wine or MENU_RE.search(combined):
+            links.append((abs_url, has_wine))
+    links.sort(key=lambda t: (not t[1]))  # wine links first
+    return links
+
+
+def page_mentions_wine(html: str) -> bool:
+    return bool(WINE_RE.search(html))
+
+
+def find_wine_menu(start_url: str) -> Tuple[str, str]:
+    """Return (menu_url, status) or ("", "No wines found")."""
     try:
-        homepage_html = pull(website)
+        homepage_html = pull(start_url)
     except Exception as e:
-        output.append({
+        return "", f"Error fetching homepage: {e}"
+
+    soup = BeautifulSoup(homepage_html, "lxml")
+
+    # 1️⃣  direct wine links
+    for url, has_wine in candidate_links(soup, start_url):
+        if has_wine:
+            return url, "Wine link found"
+
+    # 2️⃣  scan up to 10 menu‑ish pages
+    for url, _ in candidate_links(soup, start_url)[:10]:
+        try:
+            html = pull(url)
+        except Exception:
+            continue
+        if page_mentions_wine(html):
+            return url, "Wine found inside menu page"
+
+    # 3️⃣  PDF fallback
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        if href.lower().endswith(".pdf") and re.search(r"wine|drink", href, re.I):
+            return urljoin(start_url, href), "Wine PDF link"
+
+    return "", "No wines found"
+
+# ---------------------------------------------------------------------------
+# Main
+# ---------------------------------------------------------------------------
+
+def main() -> None:
+    restaurants = load_restaurants()
+    if not restaurants:
+        print("No restaurant list CSVs found. Run restaurant_scraper.py first.", file=sys.stderr)
+        sys.exit(1)
+
+    out_rows = []
+    for rest in restaurants:
+        name = rest.get("name", "Unknown")
+        website = rest.get("website", "").strip()
+        if not website:
+            out_rows.append({
+                "name": name,
+                "website": "",
+                "wine_menu_url": "",
+                "status": "No website listed",
+            })
+            continue
+
+        print(f"🔎 Searching wine menu for {name}…")
+        menu_url, status = find_wine_menu(website)
+        out_rows.append({
             "name": name,
             "website": website,
-            "menu_url": "Error",
-            "wine_details": f"Error fetching homepage: {e}"
+            "wine_menu_url": menu_url,
+            "status": status,
         })
-        continue
 
-    homepage_soup = BeautifulSoup(homepage_html, 'lxml')
-    menu_url = find_menu_link(homepage_soup, website)
-    if not menu_url:
-        print(f"No menu link found for {name}")
-        output.append({
-            "name": name,
-            "website": website,
-            "menu_url": "N/A",
-            "wine_details": "No menu link found"
-        })
-        continue
+    os.makedirs("data", exist_ok=True)
+    out_path = os.path.join("data", "restaurant_wine_offerings.csv")
+    with open(out_path, "w", newline="", encoding="utf-8") as fh:
+        writer = csv.DictWriter(fh, fieldnames=["name", "website", "wine_menu_url", "status"])
+        writer.writeheader()
+        writer.writerows(out_rows)
 
-    print(f"Found menu link for {name}: {menu_url}")
-    try:
-        menu_html = pull(menu_url)
-    except Exception as e:
-        output.append({
-            "name": name,
-            "website": website,
-            "menu_url": menu_url,
-            "wine_details": f"Error fetching menu: {e}"
-        })
-        continue
+    print(f"✅ Results written to {out_path}")
 
-    wine_details = extract_wine_details(menu_html)
-    output.append({
-        "name": name,
-        "website": website,
-        "menu_url": menu_url,
-        "wine_details": wine_details
-    })
 
-# Write the results to a new CSV file.
-output_csv = os.path.join('data', 'restaurant_wine_menus.csv')
-with open(output_csv, 'w', newline='', encoding='utf-8') as csvfile:
-    fieldnames = ["name", "website", "menu_url", "wine_details"]
-    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-    writer.writeheader()
-    for row in output:
-        writer.writerow(row)
-
-print("Wine menu details have been saved to", output_csv)
+if __name__ == "__main__":
+    main()
