@@ -1,10 +1,16 @@
 // npm install csv-parser csv-writer
 
 import fs from "fs";
+import dotenv from "dotenv";
 import { createObjectCsvWriter } from "csv-writer";
 import { OpenAI } from "openai";
 
+dotenv.config(); // Load OPENAI_API_KEY from .env
+
+const { parse } = await import("csv-parse"); // Dynamic import fix
+
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+
 
 const inputPath = "./export.csv";
 const outputPath = "./cleaned_export.csv";

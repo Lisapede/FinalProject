@@ -1,0 +1,157 @@
+city,restaurant,wine_section,wine_name
+Boston,La_Royal,WINE BY THE GLASS,"SPARKLING Vita Vivet Sparkling, Cava Brut nature, Catalonia, SP 14"
+Boston,La_Royal,WINE BY THE GLASS,"WHITE $ ‘21 Gaspard, Chenin Blanc, Loire Valley FR	14"
+Boston,La_Royal,WINE BY THE GLASS,"‘22 Passionate Wines, Del Mono Blanco Sauvignon Blanc, AR 13"
+Boston,La_Royal,WINE BY THE GLASS,"‘21 Finca Arantei, Albarino,Rias Baixas SP	15"
+Boston,La_Royal,WINE BY THE GLASS,"$ ‘21 Gaspard, Chenin Blanc, Loire Valley FR	14"
+Boston,La_Royal,WINE BY THE GLASS,"SKIN CONTACT ‘22 Oenogenesis, Mataroa Amber, GR 15"
+Boston,La_Royal,WINE BY THE GLASS,"‘22 Basaurresti, Lahu Txokolina Rosato, SP 15"
+Boston,La_Royal,WINE BY THE GLASS,RED ‘19 Pedro Parra 'Pencopolitano' Cinsault/Pais Itata CH 13
+Boston,La_Royal,WINE BY THE GLASS,"‘22 Passionate Wines, Del Mono Tinto, Malbec, AR 13"
+Boston,Toro,WINE BY THE GLASS MENU,VERMUT & SHERRY
+Boston,Toro,WINE BY THE BOTTLE MENU,JAMÓNES Y QUESOS $ 15
+Boston,Toro,WINE BY THE BOTTLE MENU,Jamón Serrano $ 15
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 12
+Boston,Toro,WINE BY THE BOTTLE MENU,Molinari Finocchiona $ 12
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 24
+Boston,Toro,WINE BY THE BOTTLE MENU,Jamón Ibérico $ 24
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 20
+Boston,Toro,WINE BY THE BOTTLE MENU,Salchichón Ibérico $ 20
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 10
+Boston,Toro,WINE BY THE BOTTLE MENU,Manchego (v) sheep $ 10
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 10
+Boston,Toro,WINE BY THE BOTTLE MENU,Sherry Cask (v) sheep $ 10
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 10
+Boston,Toro,WINE BY THE BOTTLE MENU,"Valdeón Blue (v) sheep, cow, goat $ 10"
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 9 Cabra Romero goat $ 9 $ 39
+Boston,Toro,WINE BY THE BOTTLE MENU,"Meat & Cheese Board assortment of meats, cheeses, almonds and pickles"
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 39
+Boston,Toro,WINE BY THE BOTTLE MENU,"PINTXOS $ 8 Ventresca spanish tuna belly, valdeón mousse $ 8"
+Boston,Toro,WINE BY THE BOTTLE MENU,"$ 6 Morcilla* piquillo pepper, quail egg $ 6 $ 5"
+Boston,Toro,WINE BY THE BOTTLE MENU,"Txistorra y Padron chorizo, shishito pepper $ 5 $ 6 Queso de Tetilla (v)"
+Boston,Toro,WINE BY THE BOTTLE MENU,"soft cows milk cheese, red pepper jam $ 6 TAPAS PEQUEÑAS"
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 9 Aceitunas (v) marinated olives $ 9 $ 9 Almendras (v)
+Boston,Toro,WINE BY THE BOTTLE MENU,"marcona almonds, olive oil, sea salt $ 9 $ 12"
+Boston,Toro,WINE BY THE BOTTLE MENU,"Boquerones marinated white anchovies, olive oil $ 12"
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 10
+Boston,Toro,WINE BY THE BOTTLE MENU,"Escalivada Catalana (v) smoked eggplant, peppers, tomatoes, sherry vinegar $ 10"
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 10
+Boston,Toro,WINE BY THE BOTTLE MENU,"Tortilla Española* (v) egg & potato omelet, onion, olive oil $"
+Boston,Toro,WINE BY THE BOTTLE MENU,10
+Boston,Toro,WINE BY THE BOTTLE MENU,"$ 8 Pan con Tomate (v) toasted bread, tomato, garlic $"
+Boston,Toro,WINE BY THE BOTTLE MENU,8 ANCHOVIES OR BOQUERONES +3 $ 10
+Boston,Toro,WINE BY THE BOTTLE MENU,"Pimientos (v) shishito peppers, olive oil, sea salt $ 10"
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 10
+Boston,Toro,WINE BY THE BOTTLE MENU,"Dátiles con Jamón dates, marcona almonds, blue cheese, serrano $ 10"
+Boston,Toro,WINE BY THE BOTTLE MENU,"TAPAS DEL MAR $ 4ea Ostra* island creek oyster, rhubarb mignonette, mint oil"
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 4ea $ 21
+Boston,Toro,WINE BY THE BOTTLE MENU,"Vieiras Crudo* bay scallops, ajo blanco, pink muscat grapes $ 21"
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 20
+Boston,Toro,WINE BY THE BOTTLE MENU,"Atún Crudo* yellowfin tuna, passion fruit nuoc cham, satsuma $ 20"
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 16
+Boston,Toro,WINE BY THE BOTTLE MENU,"Croquetas de Bacalao* salt cod croquettes, fried lemon, alioli $ 16"
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 15
+Boston,Toro,WINE BY THE BOTTLE MENU,"Croquetas de Txangurro* crab croquettes, smoked tomato alioli, lemon $ 15"
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 19
+Boston,Toro,WINE BY THE BOTTLE MENU,"Gambas al Ajillo griddled garlic shrimp, chilies, parsley, lemon $ 19"
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 22
+Boston,Toro,WINE BY THE BOTTLE MENU,"Pulpo a la Plantxa* grilled octopus, confit potato, pimenton alioli $"
+Boston,Toro,WINE BY THE BOTTLE MENU,22
+Boston,Toro,WINE BY THE BOTTLE MENU,TAPAS DE LA TIERRA $ 18
+Boston,Toro,WINE BY THE BOTTLE MENU,"Burrata (v) sourdough, pickled grapes, pea tendrils, spiced almonds $ 18"
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 12
+Boston,Toro,WINE BY THE BOTTLE MENU,"Patatas Bravas* (v) fried potatoes, alioli, spicy tomato sauce $ 12"
+Boston,Toro,WINE BY THE BOTTLE MENU,MAKE IT A BRAVA BOMB +5 $ 14
+Boston,Toro,WINE BY THE BOTTLE MENU,"Maíz Asado* (v) grilled corn, alioli, lime, espelette, aged cheese $"
+Boston,Toro,WINE BY THE BOTTLE MENU,14
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 15
+Boston,Toro,WINE BY THE BOTTLE MENU,"Alcachofa a la Plantxa creamed spinach, confit artichoke, pepita gremolata $"
+Boston,Toro,WINE BY THE BOTTLE MENU,15
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 25
+Boston,Toro,WINE BY THE BOTTLE MENU,"Risotto con Trufa (v) spring peas, orzo, manchego cream, summer truffles"
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 25
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 15
+Boston,Toro,WINE BY THE BOTTLE MENU,"Zanahorias (v) roasted spiced rainbow carrots, lemon tahini, fresh herbs $"
+Boston,Toro,WINE BY THE BOTTLE MENU,15
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 20
+Boston,Toro,WINE BY THE BOTTLE MENU,"Esparragos Blanco court-bouillon, spring onion, trout row, butter $ 20"
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 15
+Boston,Toro,WINE BY THE BOTTLE MENU,"Coca flatbread, asparagus, garlic scape, goat cheese, lardo $ 15"
+Boston,Toro,WINE BY THE BOTTLE MENU,TAPAS CON CARNE $ 19
+Boston,Toro,WINE BY THE BOTTLE MENU,"Tartar de Res* steak tartare, giardiniera, egg yolk, manchego, toast $"
+Boston,Toro,WINE BY THE BOTTLE MENU,19
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 24
+Boston,Toro,WINE BY THE BOTTLE MENU,"Higado a la Plantxa seared foie gras, rhubarb jam, duck fat biscuit"
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 24
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 23
+Boston,Toro,WINE BY THE BOTTLE MENU,"Asado de Huesos roasted bone marrow, oxtail marmalade, citrus salad $"
+Boston,Toro,WINE BY THE BOTTLE MENU,23
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 24
+Boston,Toro,WINE BY THE BOTTLE MENU,"Costillas ribs, hot honey mustard, dill pickle spears $ 24"
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 21
+Boston,Toro,WINE BY THE BOTTLE MENU,"Filete a la Plantxa* spiced hanger steak, broccolini, sherry peppercorn sauce"
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 21
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 14
+Boston,Toro,WINE BY THE BOTTLE MENU,"Empanada braised lamb, potato, harissa yogurt $ 14"
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 14
+Boston,Toro,WINE BY THE BOTTLE MENU,"Pato con Membrillo smoked duck drumettes, quince, za'atar $ 14"
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 16
+Boston,Toro,WINE BY THE BOTTLE MENU,"Hamburguesas* burger sliders, tomato jam, alioli, pickled red onion $ 16"
+Boston,Toro,WINE BY THE BOTTLE MENU,PLATOS GRANDES PLEASE ALLOW MINIMUM 30 MINUTES $ 36
+Boston,Toro,WINE BY THE BOTTLE MENU,/ $ 72
+Boston,Toro,WINE BY THE BOTTLE MENU,"Paella de Verduras (v) sunchoke, romanesco, nettles, piperade verde $ 36"
+Boston,Toro,WINE BY THE BOTTLE MENU,/ $ 72
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 46
+Boston,Toro,WINE BY THE BOTTLE MENU,/ $ 92
+Boston,Toro,WINE BY THE BOTTLE MENU,"Paella Valenciana shrimp, mussels, clams, chorizo, chicken $ 46"
+Boston,Toro,WINE BY THE BOTTLE MENU,/ $ 92
+Boston,Toro,WINE BY THE BOTTLE MENU,POSTRES $ 5 Scoop of Sorbet choice of mango or raspberry
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 5 $ 12
+Boston,Toro,WINE BY THE BOTTLE MENU,"Bagatela de Chocolate almond cake trifle, chocolate pudding, chantilly $ 12"
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 10
+Boston,Toro,WINE BY THE BOTTLE MENU,Churros chocolate sauce $ 10
+Boston,Toro,WINE BY THE BOTTLE MENU,$ 12
+Boston,Toro,WINE BY THE BOTTLE MENU,"Flan de Queso guava, manchego $ 12"
+Austin,Nido,wine by the glass,"PREMIUM POURS                                           3oz |5oz Chardonnay  Louis Jadot, 1er Cru Pouilly-Fuisse, Burgundy, FR 2021 18 | 29"
+Austin,Nido,wine by the glass,"Cabernet Sauvignon  Cakebread , Napa, US, 2021 25 | 42"
+Austin,Nido,wine by the glass,"Champagne  Louis Roederer “Collection 244”, FR 23 | 38"
+Austin,Nido,wine by the glass,"SPARKLING & ROS É Prosecco Jeio, Conegliano Valdobbiadene, Veneto, IT  15"
+Austin,Nido,wine by the glass,"Blanc de Blanc Brut  Raventos i Blanc, Penedes, SP 18"
+Austin,Nido,wine by the glass,"Brut Rosé  Cleto Chiarli, Lambrusco, IT 16"
+Austin,Nido,wine by the glass,"Still Rosé Château Coupe Roses, Minervois, FR 18"
+Austin,Nido,wine by the glass,"WHITE Sauvingnon Blanc  Famille Natter , Sancerre, Loire, FR 21"
+Austin,Nido,wine by the glass,"Pinot Grigio  Nals Margreid “Hill” Alto Adige, IT 16"
+Austin,Nido,wine by the glass,"Grüner Veltliner  Kracher, Burgenland, AT 17"
+Austin,Nido,wine by the glass,"Chardonnay  Camille & Laurent Schaller, Chablis, Burgundy, FR 19"
+Austin,Nido,wine by the glass,"Sommelier Selection Rotates Weekly MKT RED Pinot Noir North Valley Vineyards, Willamette Valley, US 21"
+Austin,Nido,wine by the glass,"Sangiovese Dievole “Petrignano”, Chianti Classico, IT 19"
+Austin,Nido,wine by the glass,"Tempranillo Marqués de Murrietta Reserva, Rioja, SP 20"
+Austin,Nido,wine by the glass,"Cabernet Sauvignon  Rowen, Sonoma County, US 23"
+Austin,Nido,wine by the glass,Sommelier Selection Rotates Weekly MKT 3
+Austin,Nido,dessert wine by the glass,Port Kopke White Colheita 2007   28
+Austin,Nido,dessert wine by the glass,Kopke 20 Year White Port   32
+Austin,Nido,dessert wine by the glass,Kopke Colheita 1976   50
+Austin,Nido,dessert wine by the glass,Gould Family Fine Tawny   16
+Austin,Nido,dessert wine by the glass,"France 2oz pour Château d’Yquem 1er Grand Cru, Sauternes  2016"
+Austin,Nido,dessert wine by the glass,99
+Austin,Nido,dessert wine by the glass,"Austria Nibiru Grüner Veltliner Auslese,  Kamptal 2019   21"
+Austin,Nido,dessert wine by the glass,"Canada Inniskillin Vidal Icewine, Niagra Peninsula 2019   37"
+Austin,Nido,dessert wine by the glass,"Spain Perez Barquero “La Cañada”Oloroso PX, Montilla-Moriles   23"
+Austin,Nido,dessert wine by the glass,AMARO Aperol  14
+Austin,Nido,dessert wine by the glass,Averna  14
+Austin,Nido,dessert wine by the glass,Braulio 16
+Austin,Nido,dessert wine by the glass,Campari  14
+Austin,Nido,dessert wine by the glass,Cardamaro  15
+Austin,Nido,dessert wine by the glass,Chartreuse Yellow 19
+Austin,Nido,dessert wine by the glass,Chartreuse Green 19
+Austin,Nido,dessert wine by the glass,Chartreuse V.E.P.  60
+Austin,Nido,dessert wine by the glass,Faccia Brutto Alpino 14
+Austin,Nido,dessert wine by the glass,Faccia Brutto Aperitivo 9 Faccia Brutto Centurbe 12
+Austin,Nido,dessert wine by the glass,Faccia Brutto Fernet Piante 12
+Austin,Nido,dessert wine by the glass,Faccia Brutto Gorini 13
+Austin,Nido,dessert wine by the glass,Fernet Branca 14
+Austin,Nido,dessert wine by the glass,Fernet Branca Menta 14
+Austin,Nido,dessert wine by the glass,Meletti 14
+Austin,Nido,dessert wine by the glass,Montenegro  14
+Austin,Nido,dessert wine by the glass,Nonino 17
+Austin,Nido,dessert wine by the glass,20
