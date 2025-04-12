@@ -1,8 +1,14 @@
+// Open folder: cd 00_chat_wine_info
+// node server_new.js
+// open new terminal
+// curl -X POST http://localhost:3000/batch-wine-info
+
+
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import { OpenAI } from "openai";
-import { saveWine, listWines } from "./db.js";
+import { saveWine, listWines } from "../00_chat_wine_info/db.js";
 import fs from "fs";
 import path from "path";
 import { createObjectCsvWriter } from "csv-writer";
@@ -20,7 +26,9 @@ app.use(express.static("public"));
 /*──────────────── wine batch endpoint ────────────────*/
 app.post("/batch-wine-info", async (req, res) => {
   try {
-    const filePath = path.resolve("./wine_names.txt");
+    // const filePath = path.resolve("./wine_names.txt");  ------ previous
+    
+    const filePath = path.resolve("/workspaces/codespaces-blank/data/wine_menu_extracted.csv");
     console.log("Reading file from:", filePath);
 
     const data = fs.readFileSync(filePath, "utf8");

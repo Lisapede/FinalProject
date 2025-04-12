@@ -1,2 +1,279 @@
 id,producer,wine_name,vintage_hint,region,state,country,wine_type,body,brand,varietal,taste_profile,typical_vintage,price,sources,created_at
 1,La Delizia,Pinot Grigio,,Veneto,Veneto,Italy,White,Light,La Delizia,Pinot Grigio,"Crisp, Fruity",2021,$10-$15,"[""Wine Enthusiast"",""Vivino"",""Wine.com""]",2025-04-06 02:06:00
+2,,,NV,Alsace,,France,Cremant d’Alsace Brut,,Cave de Turckheim,,,NV,17,[],2025-04-07 02:10:37
+3,,,2023,Verona,,Italy,Rosé,,Corte Bravi Vivace,Pet Nat,,2023,17,[],2025-04-07 02:10:41
+4,,,2025,Loire,,France,,,Delaunay Vignerons,Folle Blanche,,2025,14,[],2025-04-07 02:10:43
+5,,,2022,Kamptal,,Austria,Gruner Veltliner,,Brandl,,,2022,,[],2025-04-07 02:10:47
+6,,,NV,Alsace,,France,Cremant d’Alsace Brut,,Cave de Turckheim,,,NV,17,[],2025-04-07 02:14:59
+7,,,2023,Verona,,Italy,Pet Nat Rosé,,Corte Bravi Vivace,,,2023,17,[],2025-04-07 02:15:02
+8,,,2025,Loire,,France,,,Delaunay Vignerons,Folle Blanche,,2025,14,[],2025-04-07 02:15:05
+9,,,2022,Kamptal,,Austria,Gruner Veltliner,,Brandl,,,2022,,[],2025-04-07 02:15:08
+10,,,2023,Macedonia,,Greece,White Blend,,Oenops APLA,,,2023,,[],2025-04-07 02:15:11
+11,,,2021,Alto Adige/Sudtirol,,Italy,Pinot Bianco,,Falkenstein,,,2021,15,[],2025-04-07 02:15:14
+12,,,2023,Macon-Villages,,France,Chardonnay,,Domaine Renaud,,,2023,15,[],2025-04-07 02:15:17
+13,,,2020,Bierzo,,Spain,Godello,,JAG Unculin,,,2020,16,[],2025-04-07 02:15:20
+14,,,2023,Rheinhessen,,Germany,Rosé,,Seehof,,,2023,14,[],2025-04-07 02:15:22
+15,,,2023,Haloze Hills,Stajerska,Slovenia,Orange Blend,,Kobal Bajta-Belo,,,2023,17,[],2025-04-07 02:15:26
+16,,,,,,,red,,,,,,,[],2025-04-07 02:15:28
+17,,,2023,Cotes Catalanes,,France,,,d’Ansignan Les Grenadines,Grenache Blend,,2023,15,[],2025-04-07 02:15:32
+18,,,2022,Piedmont,,Italy,,,Luigi Oddero Convento Langhe Rosso,Dolcetto Blend,,2022,15,[],2025-04-07 02:15:34
+19,,,2022,Alentejo,,Portugal,,,Coelheiros,Touriga Nacional/Franca,,2022,,[],2025-04-07 02:15:37
+20,,,,,,,,,half bottles,,,,,[],2025-04-07 02:15:40
+21,Pierre Paillard,,NV,Bouzy,,France,Champagne,,Pierre Paillard,,,NV,,[],2025-04-07 02:15:43
+22,Domaine Chevalier,,2019,Gevrey-Chambertin,,France,Red,,Domaine Chevalier,Pinot Noir,,2019,,[],2025-04-07 02:15:45
+23,Pauillac,,2015,Bordeaux,,France,Red,Full,Reserve de la Comtesse,Bordeaux Blend,Fruity,2015,,[],2025-04-07 02:15:49
+24,,,2022,Dalmatia,,Croatia,,,Pomalo,Debit Pet Nat,,2022,49,[],2025-04-07 02:15:51
+25,,,NV,Catalonia,,Spain,Cava,,Castell d’Age Brut Nature,,,NV,58,[],2025-04-07 02:15:54
+26,Domaine Pierre Richard,,NV,Jura,,France,Crémant du Jura Brut Rosé,,Domaine Pierre Richard,,,NV,64,[],2025-04-07 02:15:57
+27,,,NV,Champagne,,France,Brut Rosé,,Billecart-Salmon,,,NV,160,[],2025-04-07 02:16:00
+28,Larmandier-Bernier,,NV,Champagne,,France,Blanc de Blancs Extra Brut,,Larmandier-Bernier Longitude,,,NV,150,[],2025-04-07 02:16:04
+29,,,,Champagne,,France,NV Blanc de Blancs ler Cru Brut,,André Jacquart Experience,,,,115,[],2025-04-07 02:16:07
+30,Francoise Bedel,,NV,Champagne,,France,Brut,,Francoise Bedel,Pinot Meunier,,NV,160,[],2025-04-07 02:16:10
+31,,,,,,,white,,,,,,,[],2025-04-07 02:16:12
+32,,,,,,italy,,,,,,,,[],2025-04-07 02:16:14
+33,,,2022,Gallura,,Italy,Vermentino di Gallura,,Sa Raja Kintari,Vermentino,,2022,55,[],2025-04-07 02:16:17
+34,,,2022,Colli di Luni,Tuscany,Italy,Vermentino,,Boriassi Linaro,,,2022,59,[],2025-04-07 02:16:20
+35,Di Filippo,,2020,Umbria,,Italy,White,,Di Filippo,Grechetto,,2020,,[],2025-04-07 02:16:22
+36,,,2022,Locorotondo,,Italy,Verdeca Blend,,Pastini Antico,,,2022,56,[],2025-04-07 02:16:25
+37,,,2023,Etna,,Italy,Bianco,,Graci,Carricante/Catarratto,,2023,,[],2025-04-07 02:16:28
+38,Girolamo Russo,,2022,Etna,Sicily,Italy,White,,Girolamo Russo,Carricante Blend,,2022,,[],2025-04-07 02:16:33
+39,,,2023,Roero Piedmont,,Italy,White,,Bricco Ernesto,Arneis,,2023,140,[],2025-04-07 02:16:35
+40,,,2023,Abruzzo,,Italy,White,,Caprera Vento e Sale,Pecorino,,2023,,[],2025-04-07 02:16:38
+41,Walter Massa,,2022,Piedmont,,Italy,White,,Vigneti Massa,Timorasso,,2022,,[],2025-04-07 02:16:41
+42,,,,,,greece,,,,,,,,[],2025-04-07 02:16:43
+43,,,2025,Crete,,Greece,Assyrtiko,,Manousakis Nostos,,,2025,65,[],2025-04-07 02:16:46
+44,Alpha Estate,,2022,PGI Florina Macedonia,,Greece,White,,Alpha Estate,Assyrtiko,,2022,,[],2025-04-07 02:16:49
+45,Diamantakis Winery,,2022,Crete,,Greece,White,,Diamantakis,Vidiano,,2022,,[],2025-04-07 02:16:52
+46,,,,,,france,,,,,,,,[],2025-04-07 02:16:54
+47,,,2022,Languedoc,,France,White,,Domaine Reine Juliette,Picpoul de Pinet,,2022,48,[],2025-04-07 02:16:57
+48,,,2021,Irouléguy,,France,Blend,,Domaine Brana Illori,Gros Manseng,,2021,59,[],2025-04-07 02:17:00
+49,Domaine Adéle Rouzé,,2022,Quincy Loire,,France,Sauvignon Blanc,,Domaine Adéle Rouzé,Sauvignon Blanc,,2022,58,[],2025-04-07 02:17:03
+50,Francis Blanchet,,2023,Pouilly-Fume,,France,Sauvignon Blanc,,Francis Blanchet,Sauvignon Blanc,,2023,67,[],2025-04-07 02:17:06
+51,,,2020,Sancerre,,France,Sauvignon Blanc,,Gitton Galinot,,,2020,120,[],2025-04-07 02:17:09
+52,Domaine Vaccelli,,2021,Corsica,,France,White,,Domaine Vaccelli,Vermentinu,,2021,,[],2025-04-07 02:17:12
+53,Patrick Giboulot,,2022,Bourgogne,,France,White,,Patrick Giboulot,Aligote,,2022,63,[],2025-04-07 02:17:15
+54,,,2023,Burgundy,,France,Chardonnay,,Dom. Marsoif Petit-Chablis,Chardonnay,,2023,,[],2025-04-07 02:17:19
+55,Bernard Defaix,,2022,Chablis,,France,White,,Bernard Defaix,Chardonnay,,2022,79,[],2025-04-07 02:17:22
+56,Eric Forest,,2022,Pouilly Fuisse,,France,Chardonnay,,Eric Forest L’Ame Forest,Chardonnay,,2022,,[],2025-04-07 02:17:26
+57,Domaine Bertagna,,2020,Hautes-Céte de Nuits,,France,Chardonnay,,Domaine Bertagna,Chardonnay,,2020,,[],2025-04-07 02:17:35
+58,,,2021,Meursault,,France,Chardonnay,,Bouzereau-Grure Limozin,,,2021,165,[],2025-04-07 02:17:38
+59,Chateau Yvonne,,2021,Saumur,,France,Chenin Blanc,,Chateau Yvonne,Chenin Blanc,,2021,,[],2025-04-07 02:17:41
+60,Couly-Dutheil,,2021,Chinon,,France,Chenin Blanc,,Couly-Dutheil Les Chanteaux,Chenin Blanc,,2021,65,[],2025-04-07 02:17:45
+61,Domaine St. Cosme,,2023,Rhone,,France,Viognier Blend,,Domaine St. Cosme,Viognier,,2023,,[],2025-04-07 02:17:48
+62,,,2022,Alsace,,France,White,,Domaine Weinbach,Sylvaner,,2022,79,[],2025-04-07 02:17:50
+63,Trimbach,,2016,Alsace,,France,Riesling,,Trimbach,Riesling,,2016,,[],2025-04-07 02:17:53
+64,,,,,,austria & germany,,,,,,,,[],2025-04-07 02:17:56
+65,,,2023,Niederosterreich,,Austria,White,,OTT Am Berg,Gruner Veltliner,,2023,,[],2025-04-07 02:17:59
+66,Zahel,,2022,Vienna,,Austria,White,,Zahel,Gemischter Satz,,2022,,[],2025-04-07 02:18:01
+67,,,2022,Mosel,,Germany,Riesling,,Loersch Altarchen Trocken,Riesling,,2022,,[],2025-04-07 02:18:05
+68,S.A. Prüm,,2017,Mosel,,Germany,Riesling,,S.A. Prüm,Riesling,,2017,,[],2025-04-07 02:18:07
+69,,,,,,Spain & Portugal,,,,,,,,[],2025-04-07 02:18:10
+70,,,20235,,,,,,Txakolina Julian Ostolaza Ganeta,,,20235,68,[],2025-04-07 02:18:14
+71,Bodegas Godeval,,2022,Valdeorras,,Spain,White,,Bodegas Godeval,Godello,,2022,52,[],2025-04-07 02:18:17
+72,,,2021,Binnissalem-Mallorca,,Spain,,,Moll Ca’n Verdura Supernova,,,2021,,[],2025-04-07 02:18:20
+73,,,2023,Alavesa,,Spain,Blanco,,Ostatu,Viura/Malvasia,,2023,,[],2025-04-07 02:18:23
+74,Luis Pato,,2021,Bairrada,,Portugal,White,,Luis Pato,Bical,,2021,,[],2025-04-07 02:18:25
+75,,,2020,,,,,,Friere Lobo Granite Terroir Dao 50,Encruzado Blend,,2020,,[],2025-04-07 02:18:28
+76,Luis Seabra,,2021,Douro,,Portugal,White,,Luis Seabra,Rabigato Blend,,2021,68,[],2025-04-07 02:18:31
+77,,,,,,hungary,,,,,,,,[],2025-04-07 02:18:34
+78,,,2018,Somloi,,Hungary,White,,Fekete Pince,Harslevelu,,2018,,[],2025-04-07 02:18:37
+79,,,,,,america,,,,,,,,[],2025-04-07 02:18:40
+80,,,2023,Cienega Valley,California,USA,White,,Stirm,Riesling/Chenin/Chard,,2023,,[],2025-04-07 02:18:42
+81,Flowers Vineyard & Winery,,2023,Sonoma Coast,California,USA,White,Medium,Flowers,Chardonnay,Crisp and Full-Bodied,2023,,[],2025-04-07 02:18:46
+82,Matthiasson,,2022,Napa Valley,California,USA,White,,Matthiasson,Semillon/Ribolla/Sauv,,2022,,[],2025-04-07 02:18:49
+83,,,,,,,skin fermented whites & rosé,,,,,,,[],2025-04-07 02:18:52
+84,Paolo Demarie,,NV,Piedmont,,Italy,White,,Paolo Demarie,Arneis,,NV,69,[],2025-04-07 02:18:54
+85,,,2021,Weinviertel,,Austria,White,,Taubenschuss Pontic,Traminer/Welschriesling,,2021,,[],2025-04-07 02:18:58
+86,,,2022,,,Georgia,Amber,,Tevza,Chinuri,,2022,67,[],2025-04-07 02:19:00
+87,,,2022,Alsace,,France,Riesling,,Achilee,Riesling,,2022,,[],2025-04-07 02:19:03
+88,,,2020,Alsace,,France,Gewurztraminer,,Dom. Ostertag Le Bal des Masques,,,2020,,[],2025-04-07 02:19:06
+89,,,2021,Cassis Provence,,France,GSM,,Clos Sainte Magdeleine,,,2021,65,[],2025-04-07 02:19:10
+90,,,2022,,California,USA,Rosé,,Saracina,Grenache,,2022,54,[],2025-04-07 02:19:13
+91,Ameztoi,,2023,Getaria,,Spain,Txakolina,,Ameztoi Rubentis,,,2023,59,[],2025-04-07 02:19:15
+92,,,,,,,red,,,,,,,[],2025-04-07 02:19:18
+93,,,,,,italy,,,,,,,,[],2025-04-07 02:19:21
+94,,,2023,Sicily,,Italy,,,Mortellito Cala Niuru,Frappato/Nero d’Avola,,2023,61,[],2025-04-07 02:19:24
+95,Planeta,,2021,Sicily,,Italy,Red,,Planeta,Nero d’Avola/Frappato,,2021,67,[],2025-04-07 02:19:27
+96,,,2023,Sicily,,Italy,Red,,Ayunta,Nerello Mascalese,,2023,58,[],2025-04-07 02:19:30
+97,,,2019,Terre Siciliane,,Sicily,,,Benanti,Nerello Cappuccio,,2019,,[],2025-04-07 02:19:33
+98,Sella & Mosca,,2020,Sardinia,,Italy,Red,,Sella & Mosca,Cabernet/Cannonau,,2020,,[],2025-04-07 02:19:35
+99,,,2023,Marche,,Italy,Red,,Venturi Balsamino,Aleatico,,2023,,[],2025-04-07 02:19:38
+100,Teh Rosso,,2019,Monferrato Piedmont,,Italy,Red,,FUSO + Crotin,Barbera Blend,,2019,48,[],2025-04-07 02:19:41
+101,,,2022,Langhe,,Italy,Nebbiolo,,Castello di Verduno,Nebbiolo,,2022,55,[],2025-04-07 02:19:44
+102,AR.PE.PE,,2017,Lombardy,,Italy,Red,,AR.PE.PE,Nebbiolo,,2017,115,[],2025-04-07 02:19:47
+103,,,2020,Roero Piedmont,,Italy,Nebbiolo,,Valfaccenda,Nebbiolo,,2020,125,[],2025-04-07 02:19:49
+104,Antoniolo,,2018,Gattinara,Piedmont,Italy,Red,,Antoniolo San Francesco,Nebbiolo,,2018,153,[],2025-04-07 02:19:52
+105,,,2017,Brunello di Montalcino,Tuscany,Italy,Red,,Castello Romitorio,Sangiovese,,2017,145,[],2025-04-07 02:19:59
+106,,,,,,spain,,,,,,,,[],2025-04-07 02:20:01
+107,Fundamentalista,,2022,Manchuela,,Spain,Red,,Finca Sandoval,Bobal Blend,,2022,,[],2025-04-07 02:20:04
+108,Azul y Garanza,,2021,Navarra,,Spain,Red,,Azul y Garanza,Garnacha,,2021,,[],2025-04-07 02:20:06
+109,Vinedos de San Vicente,,2019,Rioja,,Spain,Red,,Remelluri,Tempranillo/Garnacha,,2019,,[],2025-04-07 02:20:09
+110,,,,,,greece,,,,,,,,[],2025-04-07 02:20:12
+111,Thymiopoulos Vineyards,,2019,Naoussa,Macedonia,Greece,Red,,Thymiopoulos Vineyards,Xinomavro,,2019,60,[],2025-04-07 02:20:18
+112,,,,,,austria & germany,,,,,,,,[],2025-04-07 02:20:21
+113,,,2022,Kamptal,,Austria,Red,,Nibiru,Zweigelt,,2022,,[],2025-04-07 02:20:24
+114,,,2019,Pfalz,,Germany,Red,,Darting,Pinot Meunier,,2019,58,[],2025-04-07 02:20:26
+115,,,,,,france,,,,,,,,[],2025-04-07 02:20:29
+116,Chateau de Lavernette,,2020,Beaujolais-Villages,,France,Red,,Chateau de Lavernette,Gamay,,2020,66,[],2025-04-07 02:20:32
+117,,,2022,Morgon,,France,Red,,Chateau de Pizay,Gamay,,2022,46,[],2025-04-07 02:20:34
+118,,,NV,Alsace,,France,Pinot Noir,,Achilee Pepin,Pinot Noir,,NV,,[],2025-04-07 02:20:37
+119,Domaine Coillot,,2016,Marsannay,,France,Red,,Domaine Coillot,Pinot Noir,,2016,,[],2025-04-07 02:20:40
+120,Domaine Bertagna,,2018,Chambolle-Musigny,,France,Red,Medium,Domaine Bertagna,Pinot Noir,Fruity,2018,235,[],2025-04-07 02:20:43
+121,Chateau de Pommard,,2019,Burgundy,,France,Red,,Chateau de Pommard,Pinot Noir,,2019,175,[],2025-04-07 02:20:46
+122,,,2020,Patrimonio,,Corsica,Nielluccio Blend,,Domaine Giacometti,,,2020,68,[],2025-04-07 02:20:49
+123,Emmanuel Haget,,2023,Loire,,France,Red,,Emmanuel Haget,Cab Franc/Pineau d’Aunis,,2023,62,[],2025-04-07 02:20:52
+124,Domaine de L’R,,2023,Loire,,France,Cabernet Franc,,Domaine de L’R,Cabernet Franc,,2023,54,[],2025-04-07 02:20:55
+125,Emmanuel Darnaud,,2022,Crozes-Hermitage,,France,Red,,Emmanuel Darnaud,Syrah,,2022,,[],2025-04-07 02:20:58
+126,,,2018,St. Emilion,,France,Red,,Grand Pey-Lescours,Merlot/Cab Franc,,2018,,[],2025-04-07 02:21:01
+127,,,,,,hungary,,,,,,,,[],2025-04-07 02:21:04
+128,,,2018,Nagy-Eged,,Hungary,,,Stumpf Pinceszet,Kekfrankos,,2018,,[],2025-04-07 02:21:07
+129,,,,,,South America,,,,,,,,[],2025-04-07 02:21:09
+130,,,2022,Secano Interior,,Chile,,,Vina Maitia Aupa Pipeno,Pais/Carignan,,2022,48,[],2025-04-07 02:21:11
+131,,,2022,Cerro Chapeu,,Uruguay,,,Castel Pujols Folklore,Tannat/Petit Manseng,,2022,54,[],2025-04-07 02:21:14
+132,,,,,,north america,,,,,,,,[],2025-04-07 02:21:17
+133,,,2023,Monterey,California,USA,Pinot Noir,,Union Sacre,Pinot Noir,,2023,,[],2025-04-07 02:21:20
+134,,,2023,Colombia Valley,,,Grenache,,Division Gamine,,,2023,79,[],2025-04-07 02:21:23
+135,,,2021,Lodi,California,USA,Red,,Birichino,Cinsault,,2021,79,[],2025-04-07 02:21:27
+136,,,2019,Coombsville Napa Valley,California,USA,Red,,Faust,Cabernet Sauvignon,,2019,195,[],2025-04-07 02:21:29
+137,,,,,,,,,,,,,,[],2025-04-07 21:08:43
+138,La_Royal,,14,Catalonia,,SP,WINE SPARKLING,,"Vita Vivet Sparkling, Cava Brut nature",,,14,,[],2025-04-07 21:08:47
+139,‘22 Passionate Wines,,AR 13,Boston,,,WINE BY THE GLASS,,La_Royal,Del Mono Blanco Sauvignon Blanc,,AR 13,,[],2025-04-07 21:08:51
+140,Monte Xanic,,2021,Boston,,Mexico,Sauvignon Blanc,,Blue_Nile,,,2021,$ 13,[],2025-04-07 21:08:55
+141,,,,Friuli-Venezia Giulia,,Italy,Pinot Grigio,,Scarpetta,,,,$ 14,"[""Boston"",""Blue_Nile""]",2025-04-07 21:09:00
+142,Jordan,,2020,Boston,California,,Chardonnay,,Blue_Nile,,,2020,$ 19,[],2025-04-07 21:09:04
+143,Blue_Nile,,,Boston,California,,Cabernet Sauvignon,,Bonanza by Caymus,,,,$ 16,[],2025-04-07 21:09:09
+144,Tripper,,2020,Elkton,Oregon,,Pinot Noir,,"Boston,Blue_Nile",,,2020,$ 12,[],2025-04-07 21:09:12
+145,Familia Torres,,2019,Toro,,Spain,Red,,Familia Torres,Tempranillo,,2019,,"[""WINE BY THE BOTTLE MENU""]",2025-04-07 21:09:17
+146,,,2021,Toro,,Spain,Sparkling Red,,Partida Creus,,,2021,,"[""WINE BY THE BOTTLE MENU""]",2025-04-07 21:09:22
+147,,,2022,Toro,Boston,,Sauvignon Blanc,,Gramona,Gessami,,2022,,[],2025-04-07 21:09:25
+148,,,2022,Toro,,Spain,Red,,MicroBio,Tempranillo/Verdejo,,2022,,"[""WINE BY THE BOTTLE MENU""]",2025-04-07 21:09:29
+149,,,2023,Toro,,Spain,Cabernet Franc,,Cosmic,,,2023,,[],2025-04-07 21:09:32
+150,,,2015,Toro,,Spain,Red,,Luberri,Tempranillo,,2015,,"[""WINE BY THE BOTTLE MENU""]",2025-04-07 21:09:36
+151,Embruix,,2019,Toro,Boston,,Cabernet + Rioja,,Vall Llach,,,2019,,[],2025-04-07 21:09:40
+152,,,2023,Toro,,Spain,Red,,Pingus PSI,Tempranillo,,2023,,"[""WINE BY THE BOTTLE MENU""]",2025-04-07 21:09:44
+153,,,2019,Toro,,Spain,Tempranillo Reserva,,Vina Alberdi,Tempranillo,,2019,,"[""WINE BY THE BOTTLE MENU""]",2025-04-07 21:09:48
+154,,,,,,,,,,,,,,[],2025-04-07 21:09:52
+155,,,,,Boston,,Agua Mineral Sparkling Mineral Water,,Merengue_Restaurant,,,,$3.00,[],2025-04-07 21:09:56
+156,,,,,,Australia,Vino Blanco/White Wine,,Yellow Tail,Chardonnay,,,$8.00,"[""Merengue Restaurant, Boston""]",2025-04-07 21:10:00
+157,,,,,California,USA,Pinot Grigio,,Esperto,,,,$10.00,"[""Merengue Restaurant, Boston""]",2025-04-07 21:10:05
+158,,,,,,Australia,Riesling,,Frisk,,,,$10.00,"[""Merengue Restaurant, Boston""]",2025-04-07 21:10:08
+159,,,,,,Italy,Prosecco,,La Marca,,,,$50.00,"[""Merengue Restaurant, Boston""]",2025-04-07 21:10:12
+160,,,,,,Australia,Vino Tinto/Red Wine Merlot,,Yellow Tail,,,,$8.00,"[""Merengue Restaurant, Boston""]",2025-04-07 21:10:16
+161,,,,,,Chile,Pinot Noir,,Cono Sur Bicicleta,,,,$10.00,"[""Merengue Restaurant, Boston""]",2025-04-07 21:10:20
+162,,,,,,Australia,Cabernet Sauvignon,,Yellow Tail,,,,$8.00,"[""Merengue_Restaurant""]",2025-04-07 21:10:23
+163,,,,Boston,,,,,Chismosas La Marca Prosecco,,,,$16.00,"[""Merengue_Restaurant""]",2025-04-07 21:10:27
+164,Sarma,,,,Boston,,,,"RIPTIDE irish whiskey, bourbon, braulio, rosemary, thyme, sage, lemon TEMPORARY LOVE sarma rum, fenugreek, sesame orgeat, banana, lime, cinnamon",,,,,[],2025-04-07 21:10:32
+165,Arriba Abajo,,,,Texas,USA,,,Austin,,"Mule Vodka and ginger beer with a squeeze of lime Choose a flavor: strawberry basil, pineapple epazote, cucumber mint, blood-orange rosemary",,,[],2025-04-07 21:10:36
+166,,,,Austin,,,Arriba_Abajo,,Vinos Poema Cava Pazo Das Bruxas Albarino Routestock Chardonnay La Fete Rose Cline Seven Ranchlands Pinot Noir,,,,,[],2025-04-07 21:10:41
+167,,,,,Austin,,"Angeline Cabernet Zero-Proof Luchador Limonada NA gin, cucumber, lime, mint, Lyre’s classico NA sparkling",,Arriba_Abajo,,,,,[],2025-04-07 21:10:48
+168,,,,,Austin,,Mule Vodka and ginger beer with a squeeze of lime,,Arriba_Abajo,,"Choose a flavor: strawberry basil, pineapple epazote, cucumber mint, blood-orange rosemary",,,[],2025-04-07 21:10:52
+169,,,,Austin,,,Arriba_Abajo,,Poema Cava Pazo das Bruxas Albarino RouteStock Chardonnay La Fete Rose Cline Seven Ranchlands Pinot Noir,,,,,[],2025-04-07 21:10:58
+170,,,,Austin,,,"Angeline Cabernet Zero-Proof Luchador Limonada NA gin, cucumber, lime, mint, Lyre’s classico NA sparkling",,Arriba_Abajo,,,,,[],2025-04-07 21:11:03
+171,Hornitos Blanco,,,,Austin,,CUCUMBER BASIL SPRITZ,,Group_Therapy,,Cucumber | Basil | Lime | St~Germain | La Marca Prosecco,,,[],2025-04-07 21:11:08
+172,"Austin,Group_Therapy",,16,,,Italy,Prosecco,,La Marca,,,16,64,[],2025-04-07 21:11:12
+173,"Austin,Group_Therapy",,2018,,,Italy,Prosecco,,Torresella,,,2018,18./72.,[],2025-04-07 21:11:15
+174,"Austin,Group_Therapy",,20/80,,,France,Sparkling Rosé,,Hampton Water,,,20/80,,[],2025-04-07 21:11:19
+175,"Austin,Group_Therapy",,16,,Paso Robles,,White Wine,,Daou,Chardonnay,,16,56,[],2025-04-07 21:11:23
+176,CANOE RIDGE,,18,,WASHINGTON,,CHARDONNAY,,CHATEAU STE MICHELLE,,,18,63,[],2025-04-07 21:11:27
+177,,,,,Austin,,Group_Therapy,,"HARTFORD COURT, RUSSIAN RIVER CHARDONNAY 22./77.",,,,,[],2025-04-07 21:11:31
+178,NAPPA CHARDONNAY 25./88.,,,,Austin,,Group_Therapy,,CAKEBREAD,,,,,[],2025-04-07 21:11:36
+179,Group_Therapy,,2018,,,New Zealand,Sauvignon Blanc,,Austin,,,2018,63,[],2025-04-07 21:11:40
+180,,,20./70.,,Austin,,Group_Therapy,,ROMBAUER,NAPPA SAUVIGNON BLANC,,20./70.,,[],2025-04-07 21:11:44
+181,"Austin,Group_Therapy",,,,,NEW ZEALAND,SAUVIGNON BLANC,,CLOUDY BAY,,,,24./84.,[],2025-04-07 21:11:48
+182,"Austin,Group_Therapy",,16,Columbia Valley,Washington,,Riesling,,Eroica,,,16,56,[],2025-04-07 21:11:52
+183,"Austin,Group_Therapy",,14,,,Italy,Pinot Grigio,,"Ruffino, Lumina",,,14,49,[],2025-04-07 21:11:56
+184,,,16./56.,Austin,,,Group_Therapy,,J VINEYARDS & WINERY,CALIFORNIA PINOT GRIS,,16./56.,,[],2025-04-07 21:12:00
+185,"Austin,Group_Therapy",,2018,San Paolo,,Italy,Pinot Grigio,,Banfi,,,2018,18./63.,[],2025-04-07 21:12:04
+186,"Austin,Group_Therapy",,20./70.,,,ITALY,PINOT GRIGIO,,SANTA margherita,,,20./70.,,[],2025-04-07 21:12:09
+187,Austin Group,,2018,North Coast,California,USA,Red Wine,,Black Stallion,Cabernet Sauvignon,,2018,63,[],2025-04-07 21:12:12
+188,"Austin, Group Therapy",,20,Paso Robles,California,USA,Cabernet Sauvignon,,Bezel by Cakebread,,,20,70,[],2025-04-07 21:12:17
+189,BV,,,,Austin,,NAPA CABERNET SAUVIGNON,,Group_Therapy,,,,25./88.,[],2025-04-07 21:12:20
+190,Austin Group Therapy,,,,Napa,USA,Cabernet Sauvignon,,Faust,,,,34/119,[],2025-04-07 21:12:24
+191,Justin,,,Paso Robles,California,USA,Cabernet Franc Blend,,Justin,,,,35./124.,[],2025-04-07 21:12:27
+192,Austin Group Therapy,,2018,,Oregon,USA,Pinot Noir,,Elouan,,,2018,18/63,[],2025-04-07 21:12:31
+193,MONTEREY PINOT NOIR 20./70.,,,,Austin,,Group_Therapy,,"DIORA, LA PETITE GRACE",,,,,[],2025-04-07 21:12:37
+194,"Austin, Group Therapy",,,Monterey,California,USA,Pinot Noir,,The Calling,,,,22./77.,[],2025-04-07 21:12:40
+195,,,,,Austin,,Group_Therapy,,"ETUDE, NAPA PINOT NOIR 25./88.",,,,,[],2025-04-07 21:12:45
+196,Austin Group,,2016,Sonoma,California,USA,Merlot,,Ferrari-Carano,Merlot,,2016,56,[],2025-04-07 21:12:48
+197,"Austin,Group_Therapy",,24./84.,,,AUSTRALIA,CABERNET-SHIRAZ BLEND,,"PENFOLDS, BIN 389",,,24./84.,,[],2025-04-07 21:12:52
+198,,,,,Austin,,Group_Therapy,,ROLUS SPARKLING HYDRATION 340ML 6,,,,,[],2025-04-07 21:12:56
+199,,,,,Austin,,,,Paperboy,,"earl grey tea, milk, vanilla matcha latte, chai, paperboy paloma blanco tequila, grapefruit, rosemary",,,[],2025-04-07 21:13:00
+200,,,,,Austin,,SPARKLING,,Paperboy,torre oria brut cava,"sage advice lemon, sage, rambler, sugar rim",,10 / 42,[],2025-04-07 21:13:04
+201,,,,,Austin,,cafe de paris brut rose,,Paperboy,,,,12 / 48,[],2025-04-07 21:13:08
+202,,,2021,Burgundy,,FR,Chardonnay,,Louis Jadot,1er Cru Pouilly-Fuisse,,2021,18 | 29,"[""Austin,Nido,wine by the glass""]",2025-04-07 21:13:12
+203,Nido,,2021,Napa,California,US,Cabernet Sauvignon,,Cakebread,,,2021,25 | 42,"[""Austin""]",2025-04-07 21:13:16
+204,Nido,,,Conegliano Valdobbiadene,,IT,SPARKLING & ROS É,,Jeio,Prosecco,,,15,[],2025-04-07 21:13:19
+205,,,18,Minervois,,FR,Still Rosé,,Château Coupe Roses,,,18,,[],2025-04-07 21:13:23
+206,Nido,,16,Alto Adige,,IT,Pinot Grigio,,Nals Margreid,,,16,,"[""Austin""]",2025-04-07 21:13:27
+207,Nido,,19,Chablis,,FR,Chardonnay,,Camille & Laurent Schaller,,,19,,"[""Austin""]",2025-04-07 21:13:30
+208,"Austin,Nido",,,Willamette Valley,Oregon,US,Red,,North Valley Vineyards,Pinot Noir,,,21,[],2025-04-07 21:13:34
+209,Austin,,20,Rioja,,SP,Tempranillo Marqués de Murrietta Reserva,,Nido,,,20,,[],2025-04-07 21:13:37
+210,"Austin,Nido",,,Sonoma County,California,US,Cabernet Sauvignon,,Rowen,Cabernet Sauvignon,,,23,[],2025-04-07 21:13:41
+211,,,,,Austin,,n/a sparkling wine,,Nido,,"Sans-gria hibiscus, pomagranite",,12,[],2025-04-07 21:13:45
+212,,,,,Austin,,Win alcohol removed sparkling wine,,Nido,,,,Spain12 | 48,[],2025-04-07 21:13:49
+213,Nido,,2022,Penedes,,Spain,Sparkling Blanc,,Raventos i Blanc Blanc de Blanc Brut,,,2022,90,"[""Austin""]",2025-04-07 21:13:53
+214,Nido,,2022,Texas High Plains,Texas,USA,SPARKLING ROSÉ,,Lost Draw,Pinot Meunier,,2022,65,[],2025-04-07 21:13:58
+215,Nido,,2021,Francs-Côtes-de-Bordeaux,,France,Rose-Marie,,Le Puy,,,2021,185,"[""Austin""]",2025-04-07 21:14:01
+216,Evening Land,,2021,Eola-Amity Hills,Oregon,USA,Chardonnay,,Evening Land,Chardonnay,,2021,98,[],2025-04-07 21:14:05
+217,Hirsch Vineyards,,2021,North Coast,California,USA,Chardonnay,,Hirsch Vineyards,Chardonnay,,2021,195,"[""Austin"",""Nido"",""wine by the glass""]",2025-04-07 21:14:09
+218,Heitz Cellar,,2019,Napa Valley,California,USA,Chardonnay,,Heitz Cellar,Chardonnay,,2019,189,[],2025-04-07 21:14:13
+219,Donnachadh Estate,,2019,Santa Rita Hills,California,USA,Chardonnay,,Donnachadh Estate,Chardonnay,,2019,155,[],2025-04-07 21:14:17
+220,,,2018,Cantebury,,New Zealand,Chardonnay,,Pyramid Valley,,,2018,115,"[""Austin"",""Nido"",""wine by the glass""]",2025-04-07 21:14:20
+221,,,2019,,,New Zealand,Sauvignon Blanc,,Gladstone “Urlar”,,,2019,72,[],2025-04-07 21:14:24
+222,,,2023,Piedmont,,Italy,Chardonnay,,De Forville Ca’ del Buc’,,,2023,68,[],2025-04-07 21:14:27
+223,,,2021,,Austin,Nido,wine by the glass,,OTHER ITALIAN Nels Margreid Hill Pinot Grigio Alto Adige,,,2021,80,[],2025-04-07 21:14:32
+224,Nido,,2023,,Austin,,wine by the glass,,Mosole Pinot Grigio Venezia,,,2023,90,[],2025-04-07 21:14:36
+225,,,2020,Rheingau,,GERMANY,Estate Trocken Riesling,,Weingut Spreitzer,Riesling,,2020,70,[],2025-04-07 21:14:40
+226,,,2018,Mosel,,Germany,Riesling,,JJ Prüm,Riesling,,2018,129,[],2025-04-07 21:14:42
+227,Wehleer Sonnenuhr,,2018,Mosel,,Germany,Riesling,,Meulenhof,Auslese,,2018,78,[],2025-04-07 21:14:46
+228,Weixelbaum,,2022,Niederösterrich,,AUSTRIA,Pinot Blanc,,Weixelbaum “Wahre Werte”,Pinot Blanc,,2022,75,"[""Austin"",""Nido"",""wine by the glass""]",2025-04-07 21:14:50
+229,Nido,,2017,,Austin,,wine by the glass,,Nigl “Piri” Trocken Riesling Kremstal 2017,,,2017,68,[],2025-04-07 21:14:54
+230,,,2022,Sancerre,,France,Sauvignon Blanc,,Lucien Crochet,,,2022,72,[],2025-04-07 21:14:57
+231,Nido,,2022,Bordeaux,,France,Sauvignon Blanc,,Le Puy Marie-Cécile,,,2022,235,[],2025-04-07 21:15:01
+232,,,2019,Jura,,,Chardonnay,,Valentin Morel Les Pieds sur Terre,,,2019,135,[],2025-04-07 21:15:04
+233,Schlossberg,,2019,ALSACE,,France,Riesling,,Trimbach Grand Cru,Riesling,,2019,240,[],2025-04-07 21:15:07
+234,Nido,,2017,,Austin,,wine by the glass,,Trimbach “ Reserve” Pinot Gris,,,2017,95,[],2025-04-07 21:15:12
+235,,,2020,,Austin,Nido,wine by the glass,,Domaine Valentin Zusslin,Riesling,,2020,90,[],2025-04-07 21:15:16
+236,Nido,,2020,,Austin,,wine by the glass,,Domaine Weinbach Riesling,,,2020,78,[],2025-04-07 21:15:19
+237,Cakebread,,2021,Napa,California,USA,Red,,Cakebread,Cabernet,,2021,220,[],2025-04-07 21:15:23
+238,Nido,,2006,,Austin,,MERLOT,,Keenan Estate,,,2006,250,[],2025-04-07 21:15:27
+239,Keenan,,2000,Napa,California,USA,Merlot,,MAGNUM Keenan Estate,Merlot,,2000,450,[],2025-04-07 21:15:30
+240,Nido,,2015,,Austin,,wine by the glass,,CABERNET FRANC Favia “Cerro Sur”,,,2015,595,[],2025-04-07 21:15:35
+241,Au Bon Climat,,2020,Santa Maria Valley,California,USA,PINOT NOIR,,Au Bon Climat,PINOT NOIR,,2020,145,[],2025-04-07 21:15:38
+242,,,2023,Sonoma Coast,California,USA,Pinot Noir,,Failla,,,2023,105,[],2025-04-07 21:15:42
+243,Nido,,2022,"Eola-Amity Hills, Willamette Valley",Oregon,USA,Red,,Evening Land,Pinot Noir,,2022,140,"[""Austin""]",2025-04-07 21:15:46
+244,Drouhin Oregon Roserock,,2023,Eola-Amity Hills,Oregon,USA,Pinot Noir,,Roserock,Pinot Noir,,2023,105,[],2025-04-07 21:15:50
+245,,,2021,Willamette Valley,Oregon,USA,Pinot Noir,,Siduri,,,2021,55,[],2025-04-07 21:15:53
+246,Nido,,2021,Patagonia,,Argentina,Pinot Noir,,Chacra Barda,,,2021,110,[],2025-04-07 21:15:56
+247,,,2020,Valle de Guadalupe,,MEXICO,,,Solar Fortun,Cabernet-Syrah,,2020,100,[],2025-04-07 21:16:00
+248,Nido,,2022,Valle de Guadalupe,Baja California,Mexico,Red,,Palafox Pionero,Tempranillo Blend,,2022,85,[],2025-04-07 21:16:04
+249,Nido,,2021,Baja California,,Mexico,Cabernet Sauvignon,,Monte Xanic,,,2021,155,[],2025-04-07 21:16:09
+250,,,2018,Mornington Peninsula,,Australia,Pinot Noir,,Moorooduc Estate,,,2018,115,[],2025-04-07 21:16:14
+251,Nido,,2021,Tasmania,,Australia,Pinot Noir,,Tolpuddle,,,2021,200,"[""Austin""]",2025-04-07 21:16:18
+252,Nido,,2019,Victoria,,Austrailia,Cabernet Sauvignon,,Farm To Table,,,2019,68,[],2025-04-07 21:16:22
+253,,,2018,Otango Valley,,New Zealand,Pinot Noir,,Pyramid Valley,,,2018,145,[],2025-04-07 21:16:26
+254,,,2017,Alsace,,France,Pinot Noir,,Trimbach,,,2017,180,[],2025-04-07 21:16:30
+255,ANCIENT REGIONS,,2003,Bekka Valley,,Lebannon,Cabernet,,Chateau Musar,,,2003,310,[],2025-04-07 21:16:34
+256,,,2019,Brda,,Slovenia,,,Movia,Cabernet Sauvignon,,2019,80,[],2025-04-07 21:16:38
+257,Nido,,2014,Bordeaux Left Bank,,France,Red,,Château Montrose,Bordeaux & Loire reds,,2014,,"[""Austin""]",2025-04-07 21:16:41
+258,Nido,,2015,BORDEAUX RIGHT BANK,,France,Bordeaux,,Closerie Saint-Roc Les Noyers,,,2015,230,"[""Austin""]",2025-04-07 21:16:44
+259,Nido,,1999,,Austin,,wine by the glass,,Closerie du Pelan Francs-Côtes-de-Bordeaux,,,1999,180,[],2025-04-07 21:16:48
+260,,,2019,,,France,,,Le Puy “Emilien” Francs-Côtes-de-Bordeaux,,,2019,185,[],2025-04-07 21:16:53
+261,Nido,,2001| 1994,,Austin,,wine by the glass,,Le Puy “Barthélemy” Francs-Côtes-de-Bordeaux,,,2001| 1994,1200 | 1500,[],2025-04-07 21:16:57
+262,Catherine & Pierre Breton,,2022,Loire,,France,Cabernet Franc,,Catherine & Pierre Breton,Cabernet Franc,,2022,110,"[""Austin"",""Nido"",""wine by the glass""]",2025-04-07 21:17:00
+263,Château Yvonne,,2022,Saumur-Champigny,,France,Cabernet Franc,,Château Yvonne “La Folie”,Cabernet Franc,,2022,100,[],2025-04-07 21:17:04
+264,Arnaud Lambert,,2021,Saumur-Champigny,,France,Cabernet Franc,,Arnaud Lambert,Cabernet Franc,,2021,,[],2025-04-07 21:17:08
+265,Nido,,2020,,Austin,,wine by the glass,,Les Athelètes du Vin Cabernet Franc Chinon,,,2020,78,[],2025-04-07 21:17:13
+266,Nido,,2022,,Austin,,wine by the glass,,Remoortere Pinot Noir Menetou-Salon,,,2022,95,[],2025-04-07 21:17:17
+267,Nido,,2021,,Austin,,wine by the glass,,Paul Prieur et Fils Les Pichons Pinot Noir Sancerre,,,2021,145,[],2025-04-07 21:17:21
+268,"Austin,Nido",,2022,Bourgueil,,France,Cabernet Franc,,MAGNUM Catherine & Pierre Breton,,,2022,170,[],2025-04-07 21:17:30
+269,Nido,,2021,,Austin,,wine by the glass,,Domaine Rougeot Clos de Roses Pommard,,,2021,205,[],2025-04-07 21:17:36
+270,Nido,,2019,,Austin,,Italian reds,,BAROLO Brovia Brea vigna ca’mia,Barolo,,2019,350,[],2025-04-07 21:17:40
+271,Paolo Scavino,,2017,Barolo,,Italy,Red,,Paolo Scavino,Nebbiolo,,2017,195,[],2025-04-07 21:17:44
+272,Nido,,2016,,Austin,,wine by the glass,,Oddero Vignarionda Riserva Barolo,,,2016,600,[],2025-04-07 21:17:48
+273,Nido,,2013,,Austin,,wine by the glass,,Bava Scarrone Barolo,,,2013,220,[],2025-04-07 21:17:57
+274,Nido,,2019,,Austin,,wine by the glass,,Chiara Boschis Via Nuova Barolo,,,2019,260,[],2025-04-07 21:18:01
+275,Nido,,2017,,Austin,,wine by the glass,,Elio Altare Cerretta Barolo Riserva,,,2017,300,[],2025-04-07 21:18:05
+276,Nido,,2020,,Austin,,wine by the glass,,MAGNUM Elio Altare Nebbiolo Barolo,,,2020,325,[],2025-04-07 21:18:09
+277,Nido,,2010,Chianti Classico,,Italy,Red,,Poggio delle Rose Riserva,,,2010,,"[""Austin""]",2025-04-07 21:18:14
+278,Nido,,,,Austin,,dessert wine,,Frapin Fontpinot X.O. 35,,,,,[],2025-04-07 21:18:17

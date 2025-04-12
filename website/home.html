@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wine Finder</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <style>
+    body { font-family: sans-serif; padding: 20px; max-width: 800px; margin: auto; }
+    input, button { padding: 10px; font-size: 16px; margin-right: 10px; }
+    .card { border: 1px solid #ddd; border-radius: 6px; padding: 10px; margin: 10px 0; }
+    #map { height: 400px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h1>🍷 Find a Wine</h1>
+  <input type="text" id="search" placeholder="Search wine name..." />
+  <button onclick="handleSearch()">Search</button>
+
+  <div id="results"></div>
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    let data = [];
+
+    // Load CSV
+    Papa.parse("cleaned_export.csv", {
+      download: true,
+      header: true,
+      complete: function(results) {
+        data = results.data.filter(row => row.restaurant && row.wine_name);
+        console.log("✅ Loaded", data.length, "rows from CSV");
+      }
+    });
+
+    let map;
+
+    function handleSearch() {
+      const query = document.getElementById("search").value.toLowerCase();
+      const matches = data.filter(item =>
+        item.wine_name.toLowerCase().includes(query)
+      );
+
+      const resultsDiv = document.getElementById("results");
+      resultsDiv.innerHTML = "";
+
+      if (matches.length === 0) {
+        resultsDiv.innerHTML = "<p>No matches found.</p>";
+        if (map) map.remove();
+        return;
+      }
+
+      matches.forEach(item => {
+        const div = document.createElement("div");
+        div.className = "card";
+        div.innerHTML = `<strong>${item.restaurant}</strong><br>${item.city}<br><small>${item.wine_name}</small>`;
+        resultsDiv.appendChild(div);
+      });
+
+      // Map
+      if (map) map.remove();
+      map = L.map("map").setView([matches[0].lat || 39.5, matches[0].lon || -98.35], 4);
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: "&copy; OpenStreetMap contributors"
+      }).addTo(map);
+
+      matches.forEach(item => {
+        if (!item.lat || !item.lon) return;
+        L.marker([parseFloat(item.lat

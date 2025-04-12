@@ -1,16 +1,16 @@
 // npm install csv-parser csv-writer
 
-// 02_clean.js
 import fs from "fs";
 import dotenv from "dotenv";
 import { createObjectCsvWriter } from "csv-writer";
 import { OpenAI } from "openai";
 
-dotenv.config();
+dotenv.config(); // Load OPENAI_API_KEY from .env
 
-const { parse } = await import("csv-parse");
+const { parse } = await import("csv-parse"); // Dynamic import fix
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+
 
 const inputPath = "./export.csv";
 const outputPath = "./cleaned_export.csv";
@@ -19,17 +19,17 @@ const missingOrNull = (val) => val === null || val === "" || val.toLowerCase() =
 
 const cleanRowWithGPT = async (row) => {
   const fieldsToFill = Object.entries(row).filter(([key, val]) => missingOrNull(val));
-  if (fieldsToFill.length === 0) return row;
+  if (fieldsToFill.length === 0) return row; // nothing to clean
 
   const prompt = `
-You are a wine data expert. Fill in any missing fields in this wine data object, returning ONLY a valid JSON object with the same keys.
+You are a wine data expert. Fill in any missing fields in this wine data object, returning ONLY a valid JSON matching the same keys.
 
 Original wine data:
 ${JSON.stringify(row, null, 2)}
 
 • Keep existing values.
 • Do not guess price if unsure.
-• If a field cannot be confidently completed, return null.
+• If a field cannot be confidently completed, return null for it.
 `.trim();
 
   const chat = await openai.chat.completions.create({
@@ -43,21 +43,10 @@ ${JSON.stringify(row, null, 2)}
   if (!match) throw new Error("GPT response did not contain valid JSON");
 
   const cleaned = JSON.parse(match[0]);
-
-  // Ensure sources is a clean string for CSV
-  if (Array.isArray(cleaned.sources)) {
-    cleaned.sources = cleaned.sources.join("; ");
-  }
-
   return { ...row, ...cleaned };
 };
 
 const processCSV = async () => {
-  if (!fs.existsSync(inputPath)) {
-    console.error(`🚫 File not found: ${inputPath}`);
-    process.exit(1);
-  }
-
   const records = [];
 
   const parser = fs
