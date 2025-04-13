@@ -1,11 +1,12 @@
-// Step 1: Run node server.js to start the server
-
 // server.js
 
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import { OpenAI } from "openai";
+import fs from "fs";
+import path from "path";
+import { parse } from "csv-parse/sync";
 
 // Load environment variables
 dotenv.config();
@@ -42,7 +43,7 @@ You are a wine researcher. Return up to 3 closely matching wine profiles in this
     "region": string|null,
     "state": string|null,
     "country": string|null,
-    "wine_type": string|null,
+    "wine_name": string|null,
     "body": string|null,
     "brand": string|null,
     "producer": string|null,
@@ -57,6 +58,7 @@ You are a wine researcher. Return up to 3 closely matching wine profiles in this
 • Output ONLY valid JSON.
 • Use null for unknown fields.
 • Choose different vintages or sub-labels if applicable.
+• Only include wines that can be matched to restaurant listings by wine_name and producer.
 
 Wine to research:
 Producer: ${producer}
@@ -84,6 +86,55 @@ ${vintage ? `Vintage: ${vintage}` : ""}
   } catch (error) {
     console.error("❌ Error in /wine-info:", error);
     res.status(500).json({ error: error.message || "Internal Server Error" });
+  }
+});
+
+/**
+ * POST /find-matches
+ * Matches selected wine to restaurant listings
+ */
+app.post("/find-matches", async (req, res) => {
+  try {
+    const wine = req.body;
+
+    if (!wine || !wine.producer || !wine.wine_name) {
+      return res.status(400).json({ error: "Producer and wine name are required for matching." });
+    }
+
+    const csvPath = path.resolve("/mnt/data/cleaned_export (5).csv");
+    if (!fs.existsSync(csvPath)) {
+      return res.status(404).json({ error: "CSV file not found." });
+    }
+
+    const content = fs.readFileSync(csvPath, "utf8");
+    const records = parse(content, {
+      columns: true,
+      skip_empty_lines: true,
+    });
+
+    const matches = records.filter((row) => {
+      const rowProducer = (row.producer || row.Producer || "").trim().toLowerCase();
+      const rowName = (row.wine_name || row["Wine Name"] || row["Menu Wine Name"] || "").trim().toLowerCase();
+      const matchProducer = wine.producer.trim().toLowerCase();
+      const matchName = wine.wine_name.trim().toLowerCase();
+
+      console.log("Comparing:", {
+        rowProducer,
+        matchProducer,
+        rowName,
+        matchName
+      });
+
+      return (
+        rowProducer.includes(matchProducer) &&
+        rowName.includes(matchName)
+      );
+    });
+
+    res.json(matches);
+  } catch (error) {
+    console.error("❌ Error in /find-matches:", error);
+    res.status(500).json({ error: error.message || "Failed to search matches." });
   }
 });
 
