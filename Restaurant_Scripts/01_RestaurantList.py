@@ -1,4 +1,4 @@
-# restaurant_scraper.py
+# 01_RestaurantList.py
 """
 Restaurant List Scraper
 =======================

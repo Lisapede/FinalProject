@@ -1,4 +1,4 @@
-# extract_wine_menus.py
+# 03_WineMenuExtractor.py
 """
 Wine Menu Extractor
 ===================
